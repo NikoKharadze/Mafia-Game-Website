@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Mafia Game</title>
+    <style>
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        nav::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .random-role-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .random-role-button:hover {
+            background-color: #45a049;
+        }
+
+        .random-role-display {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .role-image {
+            margin-top: 20px;
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Rules.html">Rules</a></li>
+        <li><a href="Tips.html">Tips</a></li>
+        <li><a href="Game.html">Game</a></li>
+    </ul>
+</nav>
+
+<h1><b>Similar Games to Mafia</b></h1>
+<p>If you enjoy Mafia, here are some other social deduction games you can play with friends:</p>
+
+<ul>
+    <li><b>Werewolf:</b> Very similar to Mafia, players are divided into werewolves and villagers, with secret roles and night-time killings.</li>
+    <li><b>Secret Hitler:</b> A hidden identity game where players try to enact policies while others attempt to discover who is Hitler.</li>
+    <li><b>Resistance:</b> Another deduction game where two teams (Resistance and Spies) try to complete missions without being sabotaged.</li>
+    <li><b>Coup:</b> A game of bluffing where players use influence cards to eliminate others and become the last player standing.</li>
+</ul>
+
+<h2>Get a Random Role</h2>
+<button class="random-role-button" onclick="displayRandomRole()">Click to Reveal Your Role</button>
+
+<div class="random-role-display" id="roleDisplay"></div>
+<img id="roleImage" class="role-image" src="media/" alt="Role Image" />
+
+<script>
+    function displayRandomRole() {
+        const roles = [
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Citizen", img: "media/roles/citizen.jpg" },
+            { role: "Mafia", img: "media/roles/mafia.jpg" },
+            { role: "Mafia", img: "media/roles/mafia.jpg" },
+            { role: "Mafia (Don)", img: "media/roles/don.jpg" },
+            { role: "Killer", img: "media/roles/killer.jpg" },
+            { role: "Detective", img: "media/roles/detective.jpg" },
+            { role: "Medic", img: "media/roles/medic.jpg" }
+        ];
+
+        const shuffledRoles = roles.sort(() => 0.5 - Math.random());
+
+        const randomRole = shuffledRoles[Math.floor(Math.random() * shuffledRoles.length)];
+
+        document.getElementById("roleDisplay").textContent = "Your role is: " + randomRole.role;
+        document.getElementById("roleImage").src = randomRole.img;
+        document.getElementById("roleImage").alt = randomRole.role + " Image";
+    }
+</script>
+
+<h2>Leave Your Feedback</h2>
+<p>Please provide your information to get newest updates about Mafia Game:</p>
+
+<p>Full Name: [Enter Full Name]</p>
+<p>Email: [Enter Email]</p>
+<p>Checkbox: (I Want to get Emails about latest Mafia Game updates)</p>
+
+<p>Please choose one of the following:</p>
+<p>Radio Buttons: 1: I am satisfied with the website, 2: I am not satisfied with the website</p>
+
+<p>Leave your opinion about game down below: [Text Area]</p>
+
+
+</body>
+</html>
