@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.random-role-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.random-role-button:hover {
+    background-color: #45a049;
+}
+
+.random-role-display {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.role-image {
+    margin-top: 20px;
+    display: block;
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,100 @@
+/* body {
+    background-color: #4e0d0d; /* Replace with your desired color */
+   
+
+    body {
+        background-image: url(); /* Replace with the correct path to your image */
+        background-size: cover;  /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image */
+      }
+      
+  
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Leaderboard section specifically */
+  .leaderboard-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 60%;  /* Adjust as necessary for table width */
+    
+  }
+
+
+
+  table {
+    width: 100%;  /* Make the table fill the container */
+    border-collapse: collapse;
+    color: #ffffff;
+  }
+  
+  th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+
+  }
+  
+  th {
+    background-color: #4e0d0d;
+    color: white;
+  }
+  
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Ensuring other elements remain in flow */
+  video {
+    margin-right: 20px;
+  }
+
+  /* Container for the videos to display them in a row */
+.video-container {
+    display: flex;
+    justify-content: space-around; /* Space videos evenly across the row */
+    flex-wrap: wrap;  /* Allows videos to wrap to the next line if the screen is too narrow */
+  }
+  
+  video {
+    margin: 10px; /* Add some spacing between the videos */
+  }
+  
+  h1{
+    color: #ffffff;
+  }
+
+  h2{
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 22px; /* Increase this value to make the text larger */
+    line-height: 1.6; /* Optional: Adjust line spacing for readability */
+    color:#ffffff
+  }
+  
+  
