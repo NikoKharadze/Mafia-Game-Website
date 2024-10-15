@@ -1,12 +1,9 @@
-
-
-    body {
-      background-image: url(https://i.pinimg.com/originals/12/7c/5e/127c5e5e33e137b8881eae16f8e81f31.jpg); /* Replace with the correct path to your image */
-      background-size: cover;  /* Ensures the image covers the entire background */
-      background-position: center; /* Centers the image */
-    }
+body {
+  background-image: url(https://i.pinimg.com/originals/12/7c/5e/127c5e5e33e137b8881eae16f8e81f31.jpg); /* Replace with the correct path to your image */
+  background-size: cover;  /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+}
     
-
 
 html, body {
   height: 100%;
@@ -18,32 +15,21 @@ body {
   flex-direction: column;
 }
 
-/* Navigation styling */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
 /* Leaderboard section specifically */
 .leaderboard-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center horizontally and vertically */
-  width: 60%;  /* Adjust as necessary for table width */
-  
+  transform: translate(-50%, -50%); 
+  width: 60%;    
 }
 
 
 
 table {
-  width: 100%;  /* Make the table fill the container */
+  width: 70%;  /* Make the table fill the container */
   border-collapse: collapse;
+  margin: auto;
   color: #ffffff;
 }
 
@@ -52,6 +38,7 @@ th, td {
   padding: 10px;
   text-align: center;
   color: #ffffff;
+  
 
 }
 
@@ -63,6 +50,7 @@ th {
 
 h2 {
   margin-bottom: 10px;
+  margin: auto;
 }
 
 /* Ensuring other elements remain in flow */

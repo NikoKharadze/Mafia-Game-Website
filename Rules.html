@@ -1,56 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/base.css">
-    <title>Rules - Mafia Game</title>
-    
-</head>
-<body>
-
-<!-- Navigation Bar -->
-<nav>
-    <ul>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Rules.html">Rules</a></li>
-        <li><a href="Tips.html">Tips</a></li>
-        <li><a href="Game.html">Game</a></li>
-    </ul>
-</nav>
-<!-- Navigation Bar -->
-
-
-
-
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/rules.css"> 
+        <script src="rules.js"></script>
+        
+        <title>Rules - Mafia Game</title>
+        
+    </head>
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Rules.html">Rules</a></li>
+                <li><a href="Tips.html">Tips</a></li>
+                <li><a href="Game.html">Game</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation Bar -->
+        
+        
+        
 <h1><b>Rules of Mafia</b></h1>
 <h2>ROLES</h2>
-<p>
-    Aq unda iyos rolebis slideshow !!!
-</p>
+<div class="slideshow-container">
+    <!-- Left Arrow -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    
+    <!-- Slide 1 (Citizen) -->
+    <div class="slides active">
+        <div class="slide-content">
+            <img src="media/roles/citizen.jpg" alt="Citizen" class="role-image">
+            <div class="role-text">
+                <h2>Citizen</h2>
+                <p>As a citizen you do not have a special ability, your goal is to find mafias and a killer. Engage in discussiona and try not to make mistakes</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 2 (Detective) -->
+    <div class="slides">
+        <div class="slide-content">
+            <img src="media/roles/detective.jpg" alt="Detective" class="role-image">
+            <div class="role-text">
+                <h2>Detective</h2>
+                <p>As a detective you do have a special ability which allows you every night to check whether someone is mafia or not. At night game master will tell you whether someone is mafia or civilian when you point at a person. In case you point at a killer game master will show you a civilian because you cannot see the killer</p>
+            </div>
+        </div>
+    </div>
 
-<h2>P</h2>
-<h2>H</h2>
-<h2>A</h2>
-<h2>S</h2>
-<h2>E</h2>
-<h2>S</h2>
+    <!-- Slide 3 (Medic) -->
+    <div class="slides">
+        <div class="slide-content">
+            <img src="media/roles/medic.jpg" alt="Medic" class="role-image">
+            <div class="role-text">
+                <h2>Medic</h2>
+                <p>As a medic you do have a special ability which allows you to heal 1 person per night. Use your ability wisely. In case mafia or killer shoot a person who has been healed by you that person will not die. It is a really usefull and important role</p>
+            </div>
+        </div>
+    </div>
 
-<h2>DAY</h2>
-<p><img src="media/Phases/Day.jpg" alt="Day" width="200" height="150" align="Right">During the day, all players gather to discuss what occurred during the night. Suspicion and accusations begin to fly as players try to piece together clues from the previous night’s events. Citizens work together, trying to identify the Mafia and the Killer through conversation and debate. The Detective may subtly hint at their findings without revealing their identity, while the Mafia and Don blend in, pretending to be innocent. At the end of the day, players vote to eliminate one person, hoping to target an enemy. The results of the vote can shift the balance of power, either bringing the town closer to victory or giving the Mafia an advantage</p>
+    <!-- Slide 4 (Mafia) -->
+    <div class="slides">
+        <div class="slide-content">
+            <img src="media/roles/mafia.jpg" alt="Mafia" class="role-image">
+            <div class="role-text">
+                <h2>Mafia</h2>
+                <p>As a mafia your role is to show yourself as if you are a citizen. Try to eliminate citizens and be careful not to get detectives attention. You can kill 1 person a night</p>
+            </div>
+        </div>
+    </div>
 
-<h2>NIGHT</h2>
-<p><img src="media/Phases/Night.jpg" alt="Night" width="200" height="200" align="Left">During the night, the game takes a darker turn as each role secretly takes action. The Mafia and their leader, the Don, choose a Citizen to eliminate. The Killer, acting alone, picks their own target, trying to survive by thinning the numbers. The Medic can choose one player to protect, possibly saving them from being killed that night. Meanwhile, the Detective investigates one player to uncover whether they are aligned with the Mafia or not. All actions are taken in secret, and the results are revealed in the morning, setting the stage for the next round of discussions and voting.</p>
+    <!-- Slide 5 (Don) -->
+    <div class="slides">
+        <div class="slide-content">
+            <img src="media/roles/don.jpg" alt="Don" class="role-image">
+            <div class="role-text">
+                <h2>Don</h2>
+                <p>Don is a leader of mafia, he is exactly same as other mafia, but the differance is that don is the one who makes final decision of who to kill</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6 (Killer) -->
+    <div class="slides">
+        <div class="slide-content">
+            <img src="media/roles/killer.jpg" alt="Killer" class="role-image">
+            <div class="role-text">
+                <h2>Killer</h2>
+                <p>Killer is a solo player. He is trying to eliminate mafia and civilians as well. Killer wins only if he stays one on one with another player. As a killer you have 2 kills which you can not use on the first night. 1 kill can be used in one night</p>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Right Arrow -->
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
 
 
 
 
 
 
-<h2>GAME CONCLUSION</h2>
+<h2 class="phases-header">PHASES</h2>
+<div class="phases-container">
+    <div class="phase-content">
+        <div class="phase-text">
+            <h2>DAY</h2>
+            <p>During the day, all players gather to discuss what occurred during the night. Suspicion and accusations begin to fly as players try to piece together clues from the previous night’s events. Citizens work together, trying to identify the Mafia and the Killer through conversation and debate. The Detective may subtly hint at their findings without revealing their identity, while the Mafia and Don blend in, pretending to be innocent. At the end of the day, players vote to eliminate one person, hoping to target an enemy. The results of the vote can shift the balance of power, either bringing the town closer to victory or giving the Mafia an advantage.</p>
+        </div>
+        <img src="media/Phases/Day.jpg" alt="Day Phase" class="phase-image">
+    </div>
+    <div class="phase-content">
+        <div class="phase-text">
+            <h2>NIGHT</h2>
+            <p>During the night, the game takes a darker turn as each role secretly takes action. The Mafia and their leader, the Don, choose a Citizen to eliminate. The Killer, acting alone, picks their own target, trying to survive by thinning the numbers. The Medic can choose one player to protect, possibly saving them from being killed that night. Meanwhile, the Detective investigates one player to uncover whether they are aligned with the Mafia or not. All actions are taken in secret, and the results are revealed in the morning, setting the stage for the next round of discussions and voting.</p>
+        </div>
+        <img src="media/Phases/Night.jpg" alt="Night Phase" class="phase-image">
+    </div>
+</div>
 
-<p>"<img src="media/The End/The End Civilians Win.webp" alt="" height="100" width="200" align="Right">The game concludes when one side achieves victory. If the Mafia and their leader, the Don, succeed in eliminating all Citizens, they claim the win. However, the Citizens, aided by the Detective and Medic, can win by discovering and eliminating the Mafia and Killer through careful investigation and strategic voting. The Killer operates independently, aiming to be the last one standing. Each ending unfolds differently, with alliances, deception, and survival shaping the final outcome."</p>
-<img src="media/The End/The End Mafia Wins.jpg" alt="" height="100" width="200" align=":left">
+
+
+
+<h2 class="conclusion-header">GAME CONCLUSION</h2>
+<div class="conclusion-container">
+    <div class="conclusion-content">
+        <div class="conclusion-text">
+            <h2>Civilians Win</h2>
+            <p>"The game concludes when one side achieves victory. If the Mafia and their leader, the Don, succeed in eliminating all Citizens, they claim the win. However, the Citizens, aided by the Detective and Medic, can win by discovering and eliminating the Mafia and Killer through careful investigation and strategic voting. The Killer operates independently, aiming to be the last one standing. Each ending unfolds differently, with alliances, deception, and survival shaping the final outcome."</p>
+        </div>
+        <img src="media/The End/The End Civilians Win.webp" alt="Civilians Win" class="conclusion-image">
+    </div>
+    <div class="conclusion-content">
+        <div class="conclusion-text">
+            <h2>Mafia Wins</h2>
+
+            <p>"The game concludes when one side achieves victory. If the Mafia and their leader, the Don, succeed in eliminating all Citizens, they claim the win. However, the Citizens, aided by the Detective and Medic, can win by discovering and eliminating the Mafia and Killer through careful investigation and strategic voting. The Killer operates independently, aiming to be the last one standing. Each ending unfolds differently, with alliances, deception, and survival shaping the final outcome."</p>
+        </div>
+        <img src="media/The End/The End Mafia Wins.jpg" alt="Mafia Wins" class="conclusion-image">
+    </div>
+</div>
+
 </body>
 </html>

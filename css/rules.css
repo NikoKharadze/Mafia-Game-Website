@@ -1,0 +1,211 @@
+/* General styling for the body */
+body {
+    background-image: url(https://i.pinimg.com/originals/12/7c/5e/127c5e5e33e137b8881eae16f8e81f31.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: 1px auto; /* Center the slideshow under the header */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 8px;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.role-image {
+    width: 45%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.role-text {
+    width: 50%;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.phases-header {
+    font-size: 36px;
+    color: #ffcc00;
+    text-align: center;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+/* Container for phases */
+.phases-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Each phase content (text and image) */
+.phase-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Text of the phases */
+.phase-text {
+    max-width: 60%;
+    margin-right: 20px;
+    color: white;
+}
+
+.phase-text h2 {
+    color: #ffcc00;
+    font-size: 28px;
+}
+
+/* Phase image next to the text */
+.phase-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    .phases-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phase-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phase-text {
+        text-align: center;
+        max-width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .phase-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Game Conclusion header styling */
+.conclusion-header {
+    font-size: 36px;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for game conclusion sections */
+.conclusion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Each conclusion content (text and image) */
+.conclusion-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Text of the conclusion */
+.conclusion-text {
+    max-width: 60%;
+    margin-right: 20px;
+    color: white;
+}
+
+/* Conclusion image next to the text */
+.conclusion-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    .conclusion-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conclusion-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conclusion-text {
+        text-align: center;
+        max-width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .conclusion-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
